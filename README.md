@@ -26,3 +26,26 @@ curl http://spring.local:8081/api/hello
 kubectl logs deployment/spring-app
 
 ```
+
+# chek pod status
+```shell
+kubectl describe pod spring-app-<pod-id>
+```
+
+# Check the status of the pods
+```shell
+kubectl get pods
+```
+# Check the status of the services
+```shell
+kubectl get services
+```
+# Check the status of the deployments
+```shell    
+kubectl get deployments
+```
+
+# Check the stop
+```shell
+kubectl delete all --all --all-namespaces
+
